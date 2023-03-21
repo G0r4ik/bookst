@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>СоцСенть</title>
+    </head>
+    <body>
+        <div class="topbar">
+            <span class="material-icons arrow_back"> arrow_back </span>
+            <h5 class="namebook">Атлант расправил плечи</h5>
+        </div>
+        <div class="cont book">
+            <div class="about__book">
+                <img class="img-book" src="book1.jpg" alt="" />
+                <h5 class="rate-name__book">Атлант расправил плечи</h5>
+                <h5 class="rateAuthor">Александр Сергеевич Пушкин</h5>
+                <p>
+                    Жанр: <span class="span-link">Ужасы</span>,
+                    <span class="span-link">Аниме</span>
+                </p>
+                <p>Время на чтение: <span class="span-link">19 часов</span></p>
+                <p>Ваш статус: <span class="span-link">Прочитано</span></p>
+                <p>Оценка пользователей: <span class="span-link">8.9</span></p>
+                <p>Ваша оценка: <span class="span-link">5</span></p>
+                <div class="chooseRating">
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-1"
+                            type="radio"
+                            name="radio"
+                            value="1"
+                        />
+                        <label for="radio-1">1</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-2"
+                            type="radio"
+                            name="radio"
+                            value="2"
+                        />
+                        <label for="radio-2">2</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-3"
+                            type="radio"
+                            name="radio"
+                            value="3"
+                        />
+                        <label for="radio-3">3</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-4"
+                            type="radio"
+                            name="radio"
+                            value="4"
+                        />
+                        <label for="radio-4">4</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-5"
+                            type="radio"
+                            name="radio"
+                            value="5"
+                        />
+                        <label for="radio-5">5</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-6"
+                            type="radio"
+                            name="radio"
+                            value="6"
+                        />
+                        <label for="radio-6">6</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-7"
+                            type="radio"
+                            name="radio"
+                            value="7"
+                        />
+                        <label for="radio-7">7</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-8"
+                            type="radio"
+                            name="radio"
+                            value="8"
+                        />
+                        <label for="radio-8">8</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-9"
+                            type="radio"
+                            name="radio"
+                            value="9"
+                        />
+                        <label for="radio-9">9</label>
+                    </div>
+                    <div class="chooseRate__item">
+                        <input
+                            id="radio-10"
+                            type="radio"
+                            name="radio"
+                            value="10"
+                        />
+                        <label for="radio-10">10</label>
+                    </div>
+                </div>
+                <p class="preface">
+                    Мистер Джонс, хозяин Господского Двора, запер на ночь
+                    курятник, но про лазы для молодняка спьяну забыл. Фонарь в
+                    его руке ходил ходуном, круг света метался из стороны в
+                    сторону, когда он, выписывая вензеля, прошел к черному ходу,
+                    скинул сапоги, нацедил в кладовке свою последнюю в этот день
+                    кружку пива из бочки и залез в кровать, где уже задавала
+                    храпака миссис Джонс.
+                </p>
+                <strong>Напишите ваше мнение</strong>
+                <textarea class="search review" name="" id=""></textarea>
+
+                <button class="btn">Отправить</button>
+            </div>
+            <div class="reviews">
+                <strong>Мнения других</strong>
+                <select name="" id="">
+                    <option value="">По оценке</option>
+                    <option value="">По дате</option>
+                </select>
+                <div class="reviews__item">
+                    <!-- <img src="" alt=""> -->
+                    <div class="top__review">
+                        <span class="material-icons"> person_pin </span>
+                        <span class="review-author-name">Абобус Мишкович</span>
+                        <span class="rate-book">9.9</span>
+                    </div>
+                    <span class="title_reviews">Я был шокирован</span>
+                    <p class="text_reviws">
+                        Очень скучно было читать эту тягомотину, так это ещё и
+                        аниме, я был в шоке если честно... А теперь серьезщно
+                        абоба амогус и прочее очень круто
+                    </p>
+                </div>
+                <div class="reviews__item">
+                    <!-- <img src="" alt=""> -->
+                    <div class="top__review">
+                        <span class="material-icons"> person_pin </span>
+                        <span class="review-author-name"
+                            >Мария Кожельникова</span
+                        >
+                        <span class="rate-book">6.4</span>
+                    </div>
+                    <span class="title_reviews">Хуже цоя как бы мдэ</span>
+                    <p class="text_reviws">
+                        Очень скучно было читать эту тягомотину, так это ещё и
+                        аниме, я был в шоке если честно... А теперь серьезщно
+                        абоба амогус и прочее очень круто а ещё там бы...
+                    </p>
+                    <button class="btn">Показать полностью</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!-- Стильное, минималистичное, не продаем, соцсеть -->

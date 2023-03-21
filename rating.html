@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- <link rel="preload" href="normalize.css" as="style" />
+        <link rel="preload" href="style.css" as="style" />
+        <link rel="preload" href="style.css" as="style" />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+            as="style"
+        />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+            as="style"
+        /> -->
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>СОЦСЕТЬ | Рейтинг</title>
+        <meta
+            name="description"
+            content="Все книги. Оценивайте, общайтесь, полноценная соцсеть для книголюбов"
+        />
+        <meta name="robots" content="all" />
+        <meta name="yandex" content="all" />
+    </head>
+    <body>
+        <div class="cont">
+            <h2 class="pageName">Рейтинг</h2>
+            <div class="search">
+                <span class="material-icons search-in-inp"> search </span>
+                <input
+                    type="search"
+                    class="seach-input rate"
+                    placeholder="Поиск по автору или книге"
+                />
+            </div>
+
+            <h3 class="btn-filter">Фильтры</h3>
+            <div class="filters">
+                <div class="filter__item">
+                    <span>Ужасы</span>
+                    <span class="material-icons close-filter"> close </span>
+                </div>
+                <div class="filter__item">
+                    <span>С.А. Пушкин</span>
+                    <span class="material-icons close-filter"> close </span>
+                </div>
+                <div class="filter__item">
+                    <span>Комедия</span>
+                    <span class="material-icons close-filter"> close </span>
+                </div>
+                <div class="filter__item">
+                    <span>Х.П.Ловкрафт</span>
+                    <span class="material-icons close-filter"> close </span>
+                </div>
+            </div>
+            <!-- <select name="" id="">
+                <option value="">Не придумал</option>
+                <option value="">Не придумал</option>
+                <option value="">Не придумал</option>
+            </select> -->
+
+            <ul class="rateList">
+                <li class="rateList__item">
+                    <span class="rateBook">8.9</span>
+                    <img class="rateBookImg" src="book1.jpg" alt="" />
+                    <div class="rateText">
+                        <h4 class="rate-name__book">Атлант расправил плечи</h4>
+                        <h5 class="rateAuthor">Александр Сергеевич Пушкин</h5>
+                        <p>
+                            Жанр: <span class="span-link">Ужасы</span>,
+                            <span class="span-link">Аниме</span>
+                        </p>
+                        <p>
+                            Время на чтение:
+                            <span class="span-link">19 часов</span>
+                        </p>
+                        <p>
+                            Ваш статус: <span class="span-link">Прочитано</span>
+                        </p>
+                    </div>
+                </li>
+
+                <li class="rateList__item">
+                    <span class="rateBook">6.9</span>
+                    <img class="rateBookImg" src="book2.jpg" alt="" />
+                    <div class="rateText">
+                        <h4 class="rate-name__book">Дарители</h4>
+                        <h5 class="rateAuthor">Екатерина Солодь Астафьевна</h5>
+                        <p>
+                            Жанр: <span class="span-link">Драма</span>,
+                            <span class="span-link">Триллер</span>,
+                            <span class="span-link">Мелодрама</span>
+                        </p>
+                        <p>
+                            Время на чтение:
+                            <span class="span-link">1 час</span>
+                        </p>
+                        <p>Ваш статус: <span class="span-link">Читаю</span></p>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn showAll">Показать ещё</button>
+        </div>
+
+        <div class="bottom-nav">
+            <a class="bottom-nav__item" href="#">
+                <span class="material-icons bottom-nav__svg">home</span>
+                <span class="bottom-nav__link">Домашняя</span>
+            </a>
+            <a class="bottom-nav__item" href="#">
+                <span class="material-icons bottom-nav__svg"> people </span>
+                <span class="bottom-nav__link">Друзья</span>
+            </a>
+            <a class="bottom-nav__item active" href="#">
+                <span class="material-icons bottom-nav__svg">
+                    star_purple500
+                </span>
+                <span class="bottom-nav__link">Рейтинг</span>
+            </a>
+            <a class="bottom-nav__item" href="#">
+                <span class="material-icons bottom-nav__svg"> person </span>
+                <span class="bottom-nav__link">Профиль</span>
+            </a>
+        </div>
+
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </body>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.body.style.overflow = 'hidden';
+            setTimeout(function () {
+                document.querySelector(".loader").style.display =
+                    "none";
+                    document.body.style.overflow = 'auto';
+            }, 1000);
+        };
+    </script>
+</html>
